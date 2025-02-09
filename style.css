@@ -16,7 +16,7 @@ body{
     height: 100vh;
 
     display: grid;
-    grid-template-rows: 80px 1fr 120px;
+    grid-template-rows: 100px 1fr 140px;
 }
 
 .header{
@@ -29,6 +29,24 @@ body{
     font-weight: 500;
 }
 
+.icon-container{
+    display: grid;
+
+    width: 50px;
+    height: 50px;
+    background-color: #f6c8c7;
+    border-radius: 10px;
+    box-shadow: 20px 20px 100px #df918b,
+                -10px -10px 120px #d3acac;
+
+    place-items: center;
+}
+
+.icon-container img{
+    width: 30px;
+    height: 30px;
+}
+
 .card-container{
     width: 100%;
     height: 100%;
@@ -39,14 +57,14 @@ body{
 }
 
 .card-music{
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 260px;
     padding: 12px;
 
+    background-color: #f6c8c7;
     border-radius: 30px;
-
-    box-shadow: 41px 41px 82px #d3acac,
-                -41px -41px 82px #fae4e4;
+    box-shadow: 5px 5px 60px #df918b,
+                -5px -5px 60px #d3acac;
 }
 
 .card-music img{
@@ -61,7 +79,8 @@ body{
 
     display: grid;
     grid: repeat(4, 1fr) / repeat(6, 1fr);
-    place-items: center;
+    justify-items: center;
+    align-items: end;
 }
 
 .music-info h1{
@@ -72,6 +91,8 @@ body{
 .music-info span{
     grid-area: 2 / 2 / 3 / 6;
     font-size: 1rem;
+    align-self: start;
+    margin-top: 15px;
 }
 
 .music-info .music-timing{
@@ -87,9 +108,7 @@ body{
     width: 85%;
     height: 10px;
     border-radius: 20px;
-
-    box-shadow: 41px 41px 82px #493131,
-                -41px -41px 82px #fae4e4;
+    background-color: #e9b4b0;
 }
 
 .time{
@@ -97,7 +116,7 @@ body{
     height: 10px;
     border-radius: 20px;
 
-    background-color: #8b7070;
+    background-color: #df918b;
     display: flex;
     justify-content: end;
 }
@@ -107,7 +126,7 @@ body{
     height: 16px;
 
     border-radius: 50%;
-    background-color: #8b7070;
+    background-color: #df918b;
 
     align-self: center;
 }
@@ -115,6 +134,7 @@ body{
 .music-info p{
     grid-area: 4 / 1 / 5 / 2;
     justify-self: end;
+    align-self: center;
 }
 
 .music-info p:last-child{
@@ -134,4 +154,39 @@ body{
     place-items: center;
 
     font-weight: 500;
+}
+
+.icon-footer{
+    display: grid;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    place-items: center;
+
+    background-color: #f6c8c7;
+    box-shadow: 20px 20px 100px #df918b,
+                -10px -10px 120px #d3acac;
+}
+
+.icon-footer img{
+    width: 25px;
+    height: 25px;
+}
+
+.music-container div:nth-child(3){
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+.icon-pause div{
+    display: grid;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 7px solid #df918b;
+
+    place-items: center;
 }
