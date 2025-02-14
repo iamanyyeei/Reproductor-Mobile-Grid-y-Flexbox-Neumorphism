@@ -292,7 +292,7 @@ body{
 
 /* DESKTOP */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px){
     .scroll-container{
         justify-content: center;
     }
@@ -307,5 +307,17 @@ body{
     .music-container{
         width: 900px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: 90px 1fr 100px;
+    }
+    .card-music{
+        min-width: 230px;
+        height: 230px;
+        column-gap: 40px;
     }
 }
