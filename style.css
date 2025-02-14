@@ -296,6 +296,11 @@ body{
     .scroll-container{
         justify-content: center;
     }
+    .card-music{
+        min-width: 230px;
+        height: 230px;
+        column-gap: 40px;
+    }
     .circle{
         left: 98%;
     }
